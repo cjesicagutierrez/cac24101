@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <section>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <!--los formularios son para enviar informacion-->
+                <!--por defecto viajan por GET-->
+                <form action="./resultado.html">
+                    <!--hay varios tipos de INPUT-->
+                    <!--con MAXLENGTH le agrego una cantidad limite de caracteres-->
+                    <div><label for="nombre">Nombre</label>
+                        <input maxlength="5" id="nombre" placeholder="Jesica" name="nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="">Edad</label>
+                        <input type="number" min="0" max="99" name="edad">
+                        <label for="">Mes</label>
+                        <input type="number" min="1" max="11" name="mes">
+                        <input type="range" step="20" value="100">
+                    </div>
+                    <div>
+                        <label for="">Fecha Nacimiento</label>
+                        <input type="date" value="2000-01-31" required>
+                    </div>
+                    <div>
+                        <label for="foto">Foto</label>
+                        <input type="file" name="foto">
+                    </div>
+                    <div>
+                        <label for="">Nacionalidad</label>
+                        <select name="nacionalidad" id="nacionalidad" required>
+                            <option value="" select>Seleccione</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Brasil">Brasil</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="phone">Telefono</label>
+                        <input type="tel" id="phone" name="telefono" placeholder="Ej 011-27-654"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </div>
+                    <div>
+                        <label for="">Terminos y condiciones</label>
+                        <span>Si</span>
+                        <input type="radio" name="TyC" value="si">
+                        <span>No</span>
+                        <input type="radio" name="TyC" value="no">
+                    </div>
+                    <div>
+                        <label for="">Turno:</label>
+                        <div>
+                            <label for="">Mañana</label>
+                            <input type="radio" name="turno" value="manana">
+                            <label for="">Tarde</label>
+                            <input type="radio" name="turno" value="tarde">
+                            <label for="">Noche</label>
+                            <input type="radio" name="turno" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <button>
+                            Enviar
+                        </button>
+                        <button type="reset">
+                            Limpiar
+                        </button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+        <section>
+            <h3>Login</h3>
+            <form method="post">
+                <!--colocamos method post para q no viaje la info por URL ya q es contraseña-->
+                <!--es importante el value para q la info viaje, uno por casa item-->
+                <div>
+                    <label for="">Usuario</label>
+                    <input type="text" name="usuario" required>
+                </div>
+
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <div>
+                    <button>
+                        Login
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <!--agregar FAVICOM-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="../favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <h1>
+        Multimedia
+    </h1>
+    <section>
+        <h2>Videos</h2>
+        <video controls id="misVideos" width="50%">
+            <!--manera correcta de colocar un video-->
+            <source src="../5631-183849543_large.mp4" id="primerVideo">
+            <!--sino se puede reproducir el video anterior porque no existese puede colocar opcion 2, 3.4 , ogg es otra extension...-->
+            <source src="../5631-183849543_large.ogg">
+            <source src="../opcion3_large.ogg">
+            <source src="../opcion4_large.ogg">
+        </video>
+    </section>
+    <section>
+        <h1>Audio</h1>
+        <audio controls>
+            <source src="../horse.ogv" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>    
+    </section>
+    <!--etiqueta IFRAME para video de you tuve-->
+    <section>
+        <h1>Video Iframe</h1>
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/ngMm87S3zdQ?si=AgQn12tQJ5g2duov" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <!--etiqueta para insertar mapas -->
+    <section>
+        <h1>Maps</h1>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.599350795048!2d-58.21093872438483!3d-34.790860172887776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3299a874e798b%3A0x46868337b8c88985!2sVETERINARIA%20APOLO%20EN%20RANELAGH!5e0!3m2!1ses-419!2sar!4v1713661697195!5m2!1ses-419!2sar" 
+        width="400" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</body>
+
+</html>
